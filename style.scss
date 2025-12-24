@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// fonts
+@font-face {
+    font-family: "opensans";
+    src: url(fonts/i7dOIFdwYjGaAMFtZd_QA1ZbYFc.woff2);
+}
+
+@font-face {
+    font-family: "nanulight";
+    src: url(fonts/9Btx3DZF0dXLMZlywRbVRNhxy2LscnUejfyk.woff2);
+}
+
+// colors
+$color-bg: #F9F5F3;
+$heading-color: #B2856E;
+$text-color: #6B6765;
+
+
+body {
+    margin: 0;
+    font-family: "opensans", sans-serif;
+    background-color: $color-bg;
+    line-height: 1.6;
+}
+
+header {
+    max-width: 2000px;
+}
+
+header {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-bottom: 0.1rem solid #6b676530;
+
+    .left-container {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+
+        nav {
+            display: none;
+
+            ul {
+                list-style: none;
+                display: flex;
+                gap: 2rem;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: $text-color;
+                        font-weight: 400;
+                        font-size: 0.9rem;
+                        font-size: 1rem;
+
+                        &:hover {
+                            color: $heading-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .pro-btn {
+            display: none;
+            padding: 0.5rem 1.5rem;
+            background-color: $heading-color;
+            color: white;
+            border: none;
+            border-radius: 4rem;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 300;
+            text-transform: uppercase;
+
+            &:hover {
+                background-color: #000000;
+                color: #fff;
+            }
+        }
+    }
+
+    .right-container {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        font-size: 1.2rem;
+        display: none;
+
+        small {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        i {
+            cursor: pointer;
+
+            &:hover {
+                color: $heading-color;
+            }
+        }
+    }
+
+    .menu-toggle-btn {
+        font-size: 2rem;
+        cursor: pointer;
+    }
+}
+
+
+
+
+@media (min-width: 990px) {
+    header {
+        .left-container {
+            nav {
+                display: block;
+            }
+
+            .pro-btn {
+                display: block;
+            }
+        }
+
+        .right-container {
+            display: flex;
+        }
+
+        .menu-toggle-btn {
+            display: none;
+        }
+    }
+}

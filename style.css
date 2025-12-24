@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "opensans";
+  src: url(fonts/i7dOIFdwYjGaAMFtZd_QA1ZbYFc.woff2);
+}
+@font-face {
+  font-family: "nanulight";
+  src: url(fonts/9Btx3DZF0dXLMZlywRbVRNhxy2LscnUejfyk.woff2);
+}
+body {
+  margin: 0;
+  font-family: "opensans", sans-serif;
+  background-color: #F9F5F3;
+  line-height: 1.6;
+}
+
+header {
+  max-width: 2000px;
+}
+
+header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 0.1rem solid rgba(107, 103, 101, 0.1882352941);
+}
+header .left-container {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+header .left-container nav {
+  display: none;
+}
+header .left-container nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+header .left-container nav ul li a {
+  text-decoration: none;
+  color: #6B6765;
+  font-weight: 400;
+  font-size: 0.9rem;
+  font-size: 1rem;
+}
+header .left-container nav ul li a:hover {
+  color: #B2856E;
+}
+header .left-container .pro-btn {
+  display: none;
+  padding: 0.5rem 1.5rem;
+  background-color: #B2856E;
+  color: white;
+  border: none;
+  border-radius: 4rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+header .left-container .pro-btn:hover {
+  background-color: #000000;
+  color: #fff;
+}
+header .right-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+  display: none;
+}
+header .right-container small {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+header .right-container i {
+  cursor: pointer;
+}
+header .right-container i:hover {
+  color: #B2856E;
+}
+header .menu-toggle-btn {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (min-width: 990px) {
+  header .left-container nav {
+    display: block;
+  }
+  header .left-container .pro-btn {
+    display: block;
+  }
+  header .right-container {
+    display: flex;
+  }
+  header .menu-toggle-btn {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
