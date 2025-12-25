@@ -19,7 +19,8 @@ body {
   line-height: 1.6;
 }
 
-header {
+header,
+section {
   max-width: 2000px;
 }
 
@@ -92,6 +93,85 @@ header .menu-toggle-btn {
   cursor: pointer;
 }
 
+main .section1 .container {
+  margin: 8rem 0;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+main .section1 .container .top {
+  width: 100%;
+}
+main .section1 .container .top img {
+  width: 100%;
+  border-radius: 2rem;
+}
+main .section1 .container .bottom h1 {
+  font-size: 2.7rem;
+  color: #B2856E;
+  font-family: "nanulight";
+  margin: 1rem 0;
+  font-weight: 400;
+  line-height: 1.2;
+}
+main .section1 .container .bottom p {
+  color: #6B6765;
+  font-size: 1.5rem;
+}
+main .section1 .container .bottom button {
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: #B2856E;
+  color: white;
+  border: none;
+  border-radius: 4rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  outline: none;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+main .section1 .container .bottom button:hover {
+  background-color: #000000;
+  color: #fff;
+}
+main .section2 {
+  margin: 0 auto;
+}
+main .section2 .container {
+  width: 100%;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+main .section2 .container .box .icon i {
+  font-size: 3rem;
+  color: #B2856E;
+  font-weight: 300;
+}
+main .section2 .container .box .text h2 {
+  font-size: 2rem;
+  color: #B2856E;
+  font-weight: 400;
+  font-family: "nanulight";
+}
+main .section2 .container .box .text p {
+  color: #6B6765;
+}
+
+@media (min-width: 580px) {
+  main .section2 .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  main .section1 .container .bottom h1 {
+    font-size: 8rem;
+    line-height: 1;
+  }
+}
 @media (min-width: 990px) {
   header .left-container nav {
     display: block;
@@ -104,5 +184,38 @@ header .menu-toggle-btn {
   }
   header .menu-toggle-btn {
     display: none;
+  }
+  main .section1 {
+    margin: 0 auto;
+  }
+  main .section1 .container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 0 5rem;
+  }
+  main .section1 .container .top {
+    width: 50%;
+  }
+  main .section1 .container .bottom {
+    width: 50%;
+  }
+  main .section1 .container .bottom h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+  main .section1 .container .bottom p {
+    font-size: 2rem;
+  }
+  main .section2 .container {
+    padding: 0 5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  main .section2 .container .box .text h2 {
+    font-weight: 500;
+  }
+  main .section2 .container .box .text p {
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=style.css.map */

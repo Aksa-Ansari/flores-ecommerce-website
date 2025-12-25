@@ -28,7 +28,8 @@ body {
     line-height: 1.6;
 }
 
-header {
+header,
+section {
     max-width: 2000px;
 }
 
@@ -115,6 +116,135 @@ header {
     }
 }
 
+@mixin flex-column($gagp: 0rem) {
+    display: flex;
+    flex-direction: column;
+    gap: $gagp;
+}
+
+main {
+    .section1 {
+        .container {
+            margin: 8rem 0;
+            width: 100%;
+            padding: 0 0.5rem;
+
+            .top {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    border-radius: 2rem;
+                }
+            }
+
+            .bottom {
+                h1 {
+                    font-size: 2.7rem;
+                    color: $heading-color;
+                    font-family: "nanulight";
+                    margin: 1rem 0;
+                    font-weight: 400;
+                    line-height: 1.2;
+                }
+
+                p {
+                    color: $text-color;
+                    font-size: 1.5rem;
+                }
+
+                button {
+                    margin-top: 1.5rem;
+                    padding: 1rem 2rem;
+                    background-color: $heading-color;
+                    color: white;
+                    border: none;
+                    border-radius: 4rem;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    outline: none;
+                    font-weight: 300;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        background-color: #000000;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .section2 {
+        margin: 0 auto;
+
+        .container {
+            width: 100%;
+            padding: 0 0.5rem;
+            @include flex-column(1.5rem);
+            text-align: center;
+
+            .box {
+                .icon {
+                    i {
+                        font-size: 3rem;
+                        color: $heading-color;
+                        font-weight: 300;
+                    }
+                }
+
+                .text {
+                    h2 {
+                        font-size: 2rem;
+                        color: $heading-color;
+                        font-weight: 400;
+                        font-family: "nanulight";
+                    }
+
+                    p {
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+// Media Queries
+
+@media (min-width: 580px) {
+    main {
+        .section2 {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    main {
+        .section1 {
+            .container {
+                .bottom {
+                    h1 {
+                        font-size: 8rem;
+                        line-height: 1;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -138,4 +268,55 @@ header {
             display: none;
         }
     }
+
+    main {
+        .section1 {
+            margin: 0 auto;
+
+            .container {
+                display: flex;
+                align-items: center;
+                gap: 4rem;
+                padding: 0 5rem;
+
+                .top {
+                    width: 50%;
+                }
+
+                .bottom {
+                    width: 50%;
+
+                    h1 {
+                        font-size: 4rem;
+                        line-height: 1.2;
+                    }
+
+                    p {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+
+        .section2 {
+            .container {
+                padding: 0 5rem;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+
+                .box {
+                    .text {
+                        h2 {
+                            font-weight: 500;
+                        }
+
+                        p {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
