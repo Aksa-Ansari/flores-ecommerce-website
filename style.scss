@@ -209,10 +209,70 @@ main {
             }
         }
     }
+
+    .section3 {
+        margin: 0 auto;
+
+        .container {
+            margin: 8rem 0;
+            width: 100%;
+            @include flex-column(2rem);
+            padding: 0 0.5rem;
+
+            .top {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    border-radius: 2rem;
+                }
+            }
+
+            .bottom {
+                width: 100%;
+                padding: 0 2rem;
+                @include flex-column(1rem);
+
+                h1 {
+                    font-size: 2.7rem;
+                    color: $heading-color;
+                    font-family: "nanulight";
+                    font-weight: 400;
+                    line-height: 1.2;
+                }
+
+                .para {
+                    color: rgba(0, 0, 0, 0.712);
+                    font-size: 1.5rem;
+                    font-family: "opensans";
+                    font-weight: 200;
+                }
+
+                p {
+                    color: $text-color;
+                }
+
+                button {
+                    padding: 1rem 2rem;
+                    border: 1px solid rgba(0, 0, 0, 0.217);
+                    color: $text-color;
+                    border-radius: 4rem;
+                    font-size: 1.2rem;
+                    outline: none;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    width: fit-content;
+                    background-color: transparent;
+
+                    &:hover {
+                        background-color: #b2856e26;
+                        border-color: transparent;
+                    }
+                }
+            }
+        }
+    }
 }
-
-
-
 
 
 
@@ -224,6 +284,12 @@ main {
             .container {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .section3 {
+            .container {
+                padding: 0 6rem;
             }
         }
     }
@@ -248,7 +314,7 @@ main {
 
 
 
-@media (min-width: 990px) {
+@media (min-width: 900px) {
     header {
         .left-container {
             nav {
@@ -313,6 +379,34 @@ main {
                         p {
                             font-size: 1.2rem;
                         }
+                    }
+                }
+            }
+        }
+
+        .section3 {
+            .container {
+                flex-direction: row;
+                align-items: center;
+                gap: 4rem;
+                padding: 0 5rem;
+
+                .top {
+                    width: 55%;
+                }
+
+                .bottom {
+                    width: 45%;
+                }
+
+                .bottom {
+                    h1 {
+                        font-size: 4rem;
+                    }
+
+                    .para {
+                        font-size: 2rem;
+                        line-height: 1.5;
                     }
                 }
             }

@@ -159,11 +159,72 @@ main .section2 .container .box .text h2 {
 main .section2 .container .box .text p {
   color: #6B6765;
 }
+main .section3 {
+  margin: 0 auto;
+}
+main .section3 .container {
+  margin: 8rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 0.5rem;
+}
+main .section3 .container .top {
+  width: 100%;
+}
+main .section3 .container .top img {
+  width: 100%;
+  border-radius: 2rem;
+}
+main .section3 .container .bottom {
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .section3 .container .bottom h1 {
+  font-size: 2.7rem;
+  color: #B2856E;
+  font-family: "nanulight";
+  font-weight: 400;
+  line-height: 1.2;
+}
+main .section3 .container .bottom .para {
+  color: rgba(0, 0, 0, 0.712);
+  font-size: 1.5rem;
+  font-family: "opensans";
+  font-weight: 200;
+}
+main .section3 .container .bottom p {
+  color: #6B6765;
+}
+main .section3 .container .bottom button {
+  padding: 1rem 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.217);
+  color: #6B6765;
+  border-radius: 4rem;
+  font-size: 1.2rem;
+  outline: none;
+  font-weight: 300;
+  text-transform: uppercase;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: transparent;
+}
+main .section3 .container .bottom button:hover {
+  background-color: rgba(178, 133, 110, 0.1490196078);
+  border-color: transparent;
+}
 
 @media (min-width: 580px) {
   main .section2 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  main .section3 .container {
+    padding: 0 6rem;
   }
 }
 @media (min-width: 1200px) {
@@ -172,7 +233,7 @@ main .section2 .container .box .text p {
     line-height: 1;
   }
 }
-@media (min-width: 990px) {
+@media (min-width: 900px) {
   header .left-container nav {
     display: block;
   }
@@ -217,5 +278,24 @@ main .section2 .container .box .text p {
   }
   main .section2 .container .box .text p {
     font-size: 1.2rem;
+  }
+  main .section3 .container {
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    padding: 0 5rem;
+  }
+  main .section3 .container .top {
+    width: 55%;
+  }
+  main .section3 .container .bottom {
+    width: 45%;
+  }
+  main .section3 .container .bottom h1 {
+    font-size: 4rem;
+  }
+  main .section3 .container .bottom .para {
+    font-size: 2rem;
+    line-height: 1.5;
   }
 }/*# sourceMappingURL=style.css.map */
