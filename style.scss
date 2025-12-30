@@ -311,6 +311,7 @@ main {
 
                     .product-detail {
                         @include flex-column(0rem);
+                        text-align: center;
 
                         h3 {
                             font-size: 1.5rem;
@@ -353,6 +354,52 @@ main {
             }
         }
     }
+
+    .section6 {
+        .container {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+
+            .product-container {
+                .product-item {
+                    .product-detail {
+                        h3 {
+                            font-size: 2rem;
+                        }
+
+                        p {
+                            font-family: "opensans";
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+
+            .btn {
+                text-align: center;
+
+                button {
+                    padding: 1rem 2rem;
+                    border: 1px solid rgba(0, 0, 0, 0.217);
+                    color: $text-color;
+                    border-radius: 4rem;
+                    font-size: 1.2rem;
+                    outline: none;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    width: fit-content;
+                    background-color: transparent;
+
+                    &:hover {
+                        background-color: #b2856e26;
+                        border-color: transparent;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -387,6 +434,10 @@ main {
             .container {
                 padding: 3rem 6rem;
 
+                h2 {
+                    font-size: 4rem;
+                }
+
                 .product-container {
                     display: flex;
                     flex-direction: row;
@@ -408,6 +459,24 @@ main {
             }
         }
 
+        .section6 {
+            .container {
+                .product-container {
+
+                    .product-item {
+                        .product-detail {
+                            h3 {
+                                font-size: 2.3rem;
+                            }
+
+                            p {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

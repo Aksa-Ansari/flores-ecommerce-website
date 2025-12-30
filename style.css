@@ -257,6 +257,7 @@ main .section4 .container .product-container .product-item .product-detail {
   display: flex;
   flex-direction: column;
   gap: 0rem;
+  text-align: center;
 }
 main .section4 .container .product-container .product-item .product-detail h3 {
   font-size: 1.5rem;
@@ -289,6 +290,39 @@ main .section5 .container p {
   color: #6B6765;
   font-size: 1.5rem;
 }
+main .section6 .container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main .section6 .container .product-container .product-item .product-detail h3 {
+  font-size: 2rem;
+}
+main .section6 .container .product-container .product-item .product-detail p {
+  font-family: "opensans";
+  font-size: 1rem;
+}
+main .section6 .container .btn {
+  text-align: center;
+}
+main .section6 .container .btn button {
+  padding: 1rem 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.217);
+  color: #6B6765;
+  border-radius: 4rem;
+  font-size: 1.2rem;
+  outline: none;
+  font-weight: 300;
+  text-transform: uppercase;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: transparent;
+}
+main .section6 .container .btn button:hover {
+  background-color: rgba(178, 133, 110, 0.1490196078);
+  border-color: transparent;
+}
 
 @media (min-width: 580px) {
   main .section2 .container {
@@ -306,6 +340,9 @@ main .section5 .container p {
   main .section4 .container {
     padding: 3rem 6rem;
   }
+  main .section4 .container h2 {
+    font-size: 4rem;
+  }
   main .section4 .container .product-container {
     display: flex;
     flex-direction: row;
@@ -318,6 +355,12 @@ main .section5 .container p {
   }
   main .section4 .container .product-container .product-item .product-detail p {
     font-size: 1.5rem;
+  }
+  main .section6 .container .product-container .product-item .product-detail h3 {
+    font-size: 2.3rem;
+  }
+  main .section6 .container .product-container .product-item .product-detail p {
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 1200px) {
