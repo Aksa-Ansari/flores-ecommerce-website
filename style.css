@@ -323,6 +323,59 @@ main .section6 .container .btn button:hover {
   background-color: rgba(178, 133, 110, 0.1490196078);
   border-color: transparent;
 }
+main .section7 {
+  margin: 0 auto;
+  padding: 8rem 1rem;
+}
+main .section7 .container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main .section7 .container .text-box {
+  width: 100%;
+}
+main .section7 .container .text-box h2 {
+  font-size: 3.5rem;
+  color: #B2856E;
+  font-family: "nanulight";
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+  font-weight: 400;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+main .section7 .container .input-box {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+main .section7 .container .input-box input {
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.217);
+  background-color: transparent;
+  font-style: italic;
+}
+main .section7 .container .input-box i {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #B2856E;
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+main .section7 .container .input-box i:hover {
+  color: #000000;
+}
 
 @media (min-width: 580px) {
   main .section2 .container {
@@ -433,5 +486,14 @@ main .section6 .container .btn button:hover {
   main .section3 .container .bottom .para {
     font-size: 2rem;
     line-height: 1.5;
+  }
+  main .section7 .container .text-box h2 {
+    font-size: 4.5rem;
+  }
+  main .section7 .container .input-box {
+    max-width: 900px;
+  }
+  main .section7 .container .input-box input {
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=style.css.map */
