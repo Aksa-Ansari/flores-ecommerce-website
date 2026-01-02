@@ -20,7 +20,8 @@ body {
 }
 
 header,
-section {
+section,
+footer {
   max-width: 2000px;
 }
 
@@ -411,6 +412,67 @@ main .section8 .container .images .img-box img {
 main .section8 .container .images .img-box img:hover {
   transform: scale(1.03);
   transition: transform 0.3s ease;
+}
+
+footer {
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  align-items: center;
+  justify-content: center;
+}
+footer .container .footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+footer .container .footer-top .logo {
+  width: 143px;
+  height: 85px;
+}
+footer .container .footer-top .logo img {
+  width: 100%;
+  height: 100%;
+}
+footer .container .footer-top .menu-list ul {
+  list-style: none;
+  gap: 2.3rem;
+  display: flex;
+  justify-content: center;
+}
+footer .container .footer-top .menu-list ul li a {
+  text-decoration: none;
+  color: #6B6765;
+  font-weight: 400;
+  font-size: 1rem;
+}
+footer .container .footer-top .menu-list ul li a:hover {
+  color: #B2856E;
+}
+footer .container .footer-top .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+footer .container .footer-top .social-icons i {
+  padding: 0.4rem 0.9rem;
+  font-size: 1.5rem;
+  color: #B2856E;
+  cursor: pointer;
+  border: 1px solid rgba(178, 133, 110, 0.498);
+  border-radius: 0.5rem;
+}
+footer .container .footer-top .social-icons i:hover {
+  background-color: rgba(178, 133, 110, 0.1490196078);
+}
+footer .container .footer-bottom {
+  text-align: center;
 }
 
 @media (min-width: 580px) {
